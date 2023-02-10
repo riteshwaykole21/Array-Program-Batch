@@ -11,8 +11,12 @@ namespace ArrayDemo
         public void Array()
         {
             int[] num = { 45, 68, 98, 78, 98, 78 };
-            int array = num.Length;
-            Console.WriteLine(array);
+            int i, n, sum = 0;
+            for (i = 0; i < num.Length; i++)
+            {
+                sum += num[i];
+            }
+            Console.WriteLine(sum);
         }
     }
 }
