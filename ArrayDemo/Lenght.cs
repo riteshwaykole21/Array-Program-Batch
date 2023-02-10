@@ -11,12 +11,27 @@ namespace ArrayDemo
         public void Array()
         {
             int[] num = { 45, 68, 98, 78, 98, 78 };
-            int i, n, sum = 0;
-            for (i = 0; i < num.Length; i++)
+            int a, b;
+            a = num[0];
+            b = num[0];
+            for (int i = 1; i < num.Length; i++)
             {
-                sum += num[i];
+                if (num[i] > a)
+                {
+                    a = num[i];
+                }
+                else if (num[i] < b)
+                {
+                    b = num[i];
+                }
             }
-            Console.WriteLine(sum);
+            Console.WriteLine("Maximum number is " + a);
+            Console.WriteLine("Minimum number is " + b);
         }
     }
-}
+}   
+
+    
+
+    
+
