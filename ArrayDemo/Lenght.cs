@@ -10,23 +10,17 @@ namespace ArrayDemo
     {
         public void Array()
         {
-            int[] num = { 45, 68, 98, 78, 98, 78 };
+            int[] num = {45, -68, 98, -78, 99, -75 };
             int a, b;
             a = num[0];
             b = num[0];
             for (int i = 1; i < num.Length; i++)
             {
-                if (num[i] > a)
+                if(num[i] < 0)
                 {
-                    a = num[i];
-                }
-                else if (num[i] < b)
-                {
-                    b = num[i];
+                    Console.WriteLine("The Negetive Number is" + num[i]);
                 }
             }
-            Console.WriteLine("Maximum number is " + a);
-            Console.WriteLine("Minimum number is " + b);
         }
     }
 }   
