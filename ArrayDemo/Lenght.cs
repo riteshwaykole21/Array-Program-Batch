@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace ArrayDemo
 {
@@ -10,27 +11,18 @@ namespace ArrayDemo
     {
         public void Array1()
         {
-            Console.WriteLine("Enter the size of array");
-            int size = Convert.ToInt32(Console.ReadLine());
-            int[] array = new int[size];
-            int[] arr = array;
-
-            for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine("Enter the element");
-                int data = Convert.ToInt32(Console.ReadLine());
-                array[i] = data;
-            }
-            Console.WriteLine("Your elements are given below: ");
-            foreach (int item in array)
-            {
-                Console.WriteLine(item);    
+                int[] num = { 45, 68, 98, 78, 98, 78 };
+                Array.Reverse(num);
+                Console.WriteLine("Reverse Array is ");
+                foreach (int i in num)
+                Console.Write(i + " ");
             }
         }
     }
 }
-
     
+        
 
     
 
