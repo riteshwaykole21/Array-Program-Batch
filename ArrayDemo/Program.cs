@@ -11,7 +11,7 @@ namespace ArrayDemo
         static void Main(string[] args)
         {
             Lenght array = new Lenght();
-            array.Array();
+            array.Array1();
             Console.ReadLine();
         }
     }
