@@ -12,11 +12,21 @@ namespace ArrayDemo
         public void Array1()
         {
             {
-                int[] num = { 45, 68, 98, 78, 98, 78 };
-                Array.Reverse(num);
-                Console.WriteLine("Reverse Array is ");
-                foreach (int i in num)
-                Console.Write(i + " ");
+                Console.WriteLine("Enter The Element Of An Array");
+                int size = Convert.ToInt32(Console.ReadLine());
+                int[] Arr = new int[size];
+                Console.WriteLine("----------------------------------");
+                for (int i = 0; i < size; i++)
+                {
+                    Console.WriteLine("Enter The Element");
+                    int number = Convert.ToInt32(Console.ReadLine());
+                    Arr[i] = number;
+                }
+                Console.WriteLine("---------------------------------------------------");
+                foreach (int item in Arr)
+                {
+                    Console.WriteLine(item);
+                }
             }
         }
     }
