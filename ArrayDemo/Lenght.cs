@@ -12,21 +12,24 @@ namespace ArrayDemo
         public void Array1()
         {
             {
-                Console.WriteLine("Enter The Element Of An Array");
-                int size = Convert.ToInt32(Console.ReadLine());
-                int[] Arr = new int[size];
-                Console.WriteLine("----------------------------------");
-                for (int i = 0; i < size; i++)
+                int[] number = { 20, 30, 40, 50, 60, 70, 80, 68};
+                int[] number1 = { 1, 2, 30, 4, 5, 6, 7 };
+                int[] number2 = new int[15];
+                int num = 0;
+                for(int i = 0; i < number.Length; i++)
                 {
-                    Console.WriteLine("Enter The Element");
-                    int number = Convert.ToInt32(Console.ReadLine());
-                    Arr[i] = number;
+                    number2[i] = number[i];    
                 }
-                Console.WriteLine("---------------------------------------------------");
-                foreach (int item in Arr)
+                for(int i = 8; i < number2.Length; i++)
                 {
-                    Console.WriteLine(item);
+                    number2[i] = number1[num];
+                    num ++;
                 }
+                foreach (int iteam in number2)
+                {
+                    Console.WriteLine(iteam);
+                }
+
             }
         }
     }
