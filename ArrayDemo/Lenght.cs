@@ -12,24 +12,29 @@ namespace ArrayDemo
         public void Array1()
         {
             {
-                int[] number = { 20, 30, 40, 50, 60, 70, 80, 68};
-                int[] number1 = { 1, 2, 30, 4, 5, 6, 7 };
-                int[] number2 = new int[15];
-                int num = 0;
+                Console.WriteLine("Enter The size Of Array");
+                int option = Convert.ToInt32(Console.ReadLine());
+                int size = 0;
+                int[] number = new int [option];
+                
                 for(int i = 0; i < number.Length; i++)
                 {
-                    number2[i] = number[i];    
+                    Console.WriteLine("enter the element of an Array");
+                    size = Convert.ToInt32(Console.ReadLine()); 
+                    number[i] = size;
                 }
-                for(int i = 8; i < number2.Length; i++)
+                
+                for(int i = 0; i < number.Length; i++)  
                 {
-                    number2[i] = number1[num];
-                    num ++;
+                    if (number[i] % 2 == 0)
+                    {
+                        Console.WriteLine("Its Even Number " + number[i]);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Its Odd Number " + number[i]);
+                    }
                 }
-                foreach (int iteam in number2)
-                {
-                    Console.WriteLine(iteam);
-                }
-
             }
         }
     }
